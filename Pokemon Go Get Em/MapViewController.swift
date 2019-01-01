@@ -59,8 +59,10 @@ class MapViewController: UIViewController {
             annoCoord.longitude += (Double.random(in: 0...200) - 100.0) / 5000.0
             
             //grab a random pokemon from the array
-            if let pokemon = pokemonArray.randomElement() {
-                //create the annotation
+            if let randomPokemon = pokemonArray.randomElement() {
+                //create the annotation and add it to the mapView
+                let anno = PokeAnnotation(coordinate: annoCoord, pokemon: randomPokemon)
+                mapView.addAnnotation(anno)
             }
         }
     }
@@ -90,13 +92,21 @@ class MapViewController: UIViewController {
             //find the player image in the bundle and use it as our annotation pin
             guard let playerImage = Bundle.main.path(forResource: "player", ofType: "png") else { return nil }
             annoView.image = UIImage(contentsOfFile: playerImage)
-            
-            var frame = annoView.frame
-            frame.size.height = 50
-            frame.size.width = 50
-            annoView.frame = frame
+        } else {
+            //if the annotation is representing the Pokemon
+            if let pokeAnnotation = annotation as? PokeAnnotation {
+                if let imageName = pokeAnnotation.pokemon.imageName {
+                    annoView.image = UIImage(contentsOfFile: imageName)
+                }
+            }
         }
         
+        //set the frame size for our custom annotation
+        var frame = annoView.frame
+        frame.size.height = 50
+        frame.size.width = 50
+        annoView.frame = frame
+
         return annoView
     }
     
