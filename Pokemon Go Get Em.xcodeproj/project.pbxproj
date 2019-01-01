@@ -28,7 +28,7 @@
 		8CA3C66B21DAF85300AA8A09 /* revive.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C60721DAF85300AA8A09 /* revive.png */; };
 		8CA3C66C21DAF85300AA8A09 /* candy.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C60821DAF85300AA8A09 /* candy.png */; };
 		8CA3C66D21DAF85300AA8A09 /* potion.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C60921DAF85300AA8A09 /* potion.png */; };
-		8CA3C66E21DAF85300AA8A09 /* pikachu.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C60A21DAF85300AA8A09 /* pikachu.png */; };
+		8CA3C66E21DAF85300AA8A09 /* pikachu-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C60A21DAF85300AA8A09 /* pikachu-3.png */; };
 		8CA3C66F21DAF85300AA8A09 /* action.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C60B21DAF85300AA8A09 /* action.png */; };
 		8CA3C67021DAF85300AA8A09 /* ultra-ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C60C21DAF85300AA8A09 /* ultra-ball.png */; };
 		8CA3C67121DAF85300AA8A09 /* eevee.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C60D21DAF85300AA8A09 /* eevee.png */; };
@@ -56,7 +56,7 @@
 		8CA3C68721DAF85300AA8A09 /* weedle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C62321DAF85300AA8A09 /* weedle.png */; };
 		8CA3C68821DAF85300AA8A09 /* player-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C62421DAF85300AA8A09 /* player-1.png */; };
 		8CA3C68921DAF85300AA8A09 /* pawprints.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C62521DAF85300AA8A09 /* pawprints.png */; };
-		8CA3C68A21DAF85300AA8A09 /* pikachu-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C62621DAF85300AA8A09 /* pikachu-2.png */; };
+		8CA3C68A21DAF85300AA8A09 /* pikachu.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C62621DAF85300AA8A09 /* pikachu.png */; };
 		8CA3C68B21DAF85300AA8A09 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C62721DAF85300AA8A09 /* heart.png */; };
 		8CA3C68C21DAF85300AA8A09 /* valor-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C62821DAF85300AA8A09 /* valor-1.png */; };
 		8CA3C68D21DAF85300AA8A09 /* egg-incubator-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C62921DAF85300AA8A09 /* egg-incubator-1.png */; };
@@ -144,7 +144,7 @@
 		8CA3C60721DAF85300AA8A09 /* revive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = revive.png; sourceTree = "<group>"; };
 		8CA3C60821DAF85300AA8A09 /* candy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = candy.png; sourceTree = "<group>"; };
 		8CA3C60921DAF85300AA8A09 /* potion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = potion.png; sourceTree = "<group>"; };
-		8CA3C60A21DAF85300AA8A09 /* pikachu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pikachu.png; sourceTree = "<group>"; };
+		8CA3C60A21DAF85300AA8A09 /* pikachu-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pikachu-3.png"; sourceTree = "<group>"; };
 		8CA3C60B21DAF85300AA8A09 /* action.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = action.png; sourceTree = "<group>"; };
 		8CA3C60C21DAF85300AA8A09 /* ultra-ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ultra-ball.png"; sourceTree = "<group>"; };
 		8CA3C60D21DAF85300AA8A09 /* eevee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eevee.png; sourceTree = "<group>"; };
@@ -172,7 +172,7 @@
 		8CA3C62321DAF85300AA8A09 /* weedle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weedle.png; sourceTree = "<group>"; };
 		8CA3C62421DAF85300AA8A09 /* player-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player-1.png"; sourceTree = "<group>"; };
 		8CA3C62521DAF85300AA8A09 /* pawprints.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pawprints.png; sourceTree = "<group>"; };
-		8CA3C62621DAF85300AA8A09 /* pikachu-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pikachu-2.png"; sourceTree = "<group>"; };
+		8CA3C62621DAF85300AA8A09 /* pikachu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pikachu.png; sourceTree = "<group>"; };
 		8CA3C62721DAF85300AA8A09 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
 		8CA3C62821DAF85300AA8A09 /* valor-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "valor-1.png"; sourceTree = "<group>"; };
 		8CA3C62921DAF85300AA8A09 /* egg-incubator-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "egg-incubator-1.png"; sourceTree = "<group>"; };
@@ -331,7 +331,7 @@
 				8CA3C60721DAF85300AA8A09 /* revive.png */,
 				8CA3C60821DAF85300AA8A09 /* candy.png */,
 				8CA3C60921DAF85300AA8A09 /* potion.png */,
-				8CA3C60A21DAF85300AA8A09 /* pikachu.png */,
+				8CA3C60A21DAF85300AA8A09 /* pikachu-3.png */,
 				8CA3C60B21DAF85300AA8A09 /* action.png */,
 				8CA3C60C21DAF85300AA8A09 /* ultra-ball.png */,
 				8CA3C60D21DAF85300AA8A09 /* eevee.png */,
@@ -359,7 +359,7 @@
 				8CA3C62321DAF85300AA8A09 /* weedle.png */,
 				8CA3C62421DAF85300AA8A09 /* player-1.png */,
 				8CA3C62521DAF85300AA8A09 /* pawprints.png */,
-				8CA3C62621DAF85300AA8A09 /* pikachu-2.png */,
+				8CA3C62621DAF85300AA8A09 /* pikachu.png */,
 				8CA3C62721DAF85300AA8A09 /* heart.png */,
 				8CA3C62821DAF85300AA8A09 /* valor-1.png */,
 				8CA3C62921DAF85300AA8A09 /* egg-incubator-1.png */,
@@ -582,14 +582,14 @@
 				8CA3C6A221DAF85300AA8A09 /* venonat.png in Resources */,
 				8CA3C6A321DAF85300AA8A09 /* footprints.png in Resources */,
 				8CA3C6BE21DAF85300AA8A09 /* augmented-reality.png in Resources */,
-				8CA3C66E21DAF85300AA8A09 /* pikachu.png in Resources */,
+				8CA3C66E21DAF85300AA8A09 /* pikachu-3.png in Resources */,
 				8CA3C6AE21DAF85300AA8A09 /* pokestop-1.png in Resources */,
 				8CA3C66B21DAF85300AA8A09 /* revive.png in Resources */,
 				8CA3C67521DAF85300AA8A09 /* tornado.png in Resources */,
 				8CA3C6AF21DAF85300AA8A09 /* egg-incubator.png in Resources */,
 				8CA3C69A21DAF85300AA8A09 /* caterpie.png in Resources */,
 				8CA3C69C21DAF85300AA8A09 /* new.png in Resources */,
-				8CA3C68A21DAF85300AA8A09 /* pikachu-2.png in Resources */,
+				8CA3C68A21DAF85300AA8A09 /* pikachu.png in Resources */,
 				8CA3C67B21DAF85300AA8A09 /* blue-team.png in Resources */,
 				8CA3C67721DAF85300AA8A09 /* abra.png in Resources */,
 				8CA3C68921DAF85300AA8A09 /* pawprints.png in Resources */,

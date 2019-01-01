@@ -10,11 +10,20 @@ import UIKit
 import CoreData
 
 //2. we need to be able to create Pokemon
+let availablePokemon = ["dratini", "pikachu", "eevee", "pidgey", "mankey", "abra", "zubat", "snorlax", "rattata", "weedle", "caterpie", "psyduck", "jigglypuff", "venonat", "squirtle", "meowth", "bellsprout", "charmander", "bulbasaur", "mew"]
+
 func addAllPokemon() {
-    createPokemon(name: "zubat")
-    createPokemon(name: "snorlax")
-    createPokemon(name: "abra")
-    createPokemon(name: "eevee")
+    //let spawnAmount = Int.random(in: 0...3)
+    //guard let randomPokemon = availablePokemon.randomElement() else { return }
+    
+    availablePokemon.forEach { (pokemon) in
+        createPokemon(name: pokemon)
+    }
+    
+    //createPokemon(name: "zubat")
+    //createPokemon(name: "snorlax")
+    //createPokemon(name: "abra")
+    //createPokemon(name: "eevee")
 }
 
 func createPokemon(name: String) {

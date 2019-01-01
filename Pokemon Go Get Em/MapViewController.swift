@@ -18,12 +18,16 @@ class MapViewController: UIViewController {
     var manager = CLLocationManager()
     var updateCount = 0
     var allPokemon = [Pokemon]()
+    var pokemonSpawnRate: Double = 10
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //grab your Pokemon from CoreData
         allPokemon = getAllPokemon()
+        
+        //seed an initial collection of Pokemon on screen
+        generateNewPokemonOnMap()
         
         manager.delegate = self
         //check whether or not the user has authorized location gathering
@@ -59,7 +63,7 @@ class MapViewController: UIViewController {
         
         //here, we'll start creating new Pokemon after some interval, at a random location
         //place the pokemon on the screen
-        Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(generateNewPokemonOnMap), userInfo: nil, repeats: true)
+        Timer.scheduledTimer(timeInterval: pokemonSpawnRate, target: self, selector: #selector(generateNewPokemonOnMap), userInfo: nil, repeats: true)
     }
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -81,16 +85,19 @@ class MapViewController: UIViewController {
         //get the user's starting location
         if let center = manager.location?.coordinate {
             
-            //generate a random location for the pokemon
-            var annoCoord = center
-            annoCoord.latitude += (Double.random(in: 0...200) - 100.0) / 50000.0
-            annoCoord.longitude += (Double.random(in: 0...200) - 100.0) / 50000.0
-            
+            let spawnAmount = Int.random(in: 0...3)
             //grab a random pokemon from the array
-            if let randomPokemon = allPokemon.randomElement() {
-                //create the annotation and add it to the mapView
-                let anno = PokeAnnotation(coordinate: annoCoord, pokemon: randomPokemon)
-                mapView.addAnnotation(anno)
+            for _ in 0...spawnAmount {
+                if let randomPokemon = allPokemon.randomElement() {
+                    //generate a random location for the pokemon
+                    var annoCoord = center
+                    //create the annotation and add it to the mapView
+                    annoCoord.latitude += (Double.random(in: 0...200) - 100.0) / 20000.0
+                    annoCoord.longitude += (Double.random(in: 0...200) - 100.0) / 20000.0
+
+                    let anno = PokeAnnotation(coordinate: annoCoord, pokemon: randomPokemon)
+                    mapView.addAnnotation(anno)
+                }
             }
         }
     }
@@ -142,21 +149,19 @@ class MapViewController: UIViewController {
                     mapView.setRegion(region, animated: false)
                     
                     if let pokeAnnotion = view.annotation as? PokeAnnotation {
+                        guard let name = pokeAnnotion.pokemon.name else { return }
                         //is the pokemon in range
                         if mapView.visibleMapRect.contains(MKMapPoint(center)) {
                             //successful CAPTURE
                             markPokemonAsCaptured(pokemon: pokeAnnotion.pokemon)
-                            guard let name = pokeAnnotion.pokemon.name else { return }
                             displayAlertForAttemptCapture(title: "You caught a \(name.capitalized)!", message: "\(name.capitalized) has been added to your Pokedex.", inRange: true)
                         } else {
                             //failed to CAPTURE
-                            guard let name = pokeAnnotion.pokemon.name else { return }
                             displayAlertForAttemptCapture(title: "You're too far away!", message: "You need to be a bit closer to \(name.capitalized) in order to attempt capturing it.", inRange: false)
                         }
                     }
                 }
             }
-           
         }
         
     }
