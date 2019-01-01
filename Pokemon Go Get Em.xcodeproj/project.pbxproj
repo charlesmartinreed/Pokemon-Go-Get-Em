@@ -8,22 +8,227 @@
 
 /* Begin PBXBuildFile section */
 		8CA3C2BA21DAE9FC00AA8A09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA3C2B921DAE9FC00AA8A09 /* AppDelegate.swift */; };
-		8CA3C2BC21DAE9FC00AA8A09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA3C2BB21DAE9FC00AA8A09 /* ViewController.swift */; };
+		8CA3C2BC21DAE9FC00AA8A09 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA3C2BB21DAE9FC00AA8A09 /* MapViewController.swift */; };
 		8CA3C2BF21DAE9FC00AA8A09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C2BD21DAE9FC00AA8A09 /* Main.storyboard */; };
 		8CA3C2C221DAE9FC00AA8A09 /* Pokemon_Go_Get_Em.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8CA3C2C021DAE9FC00AA8A09 /* Pokemon_Go_Get_Em.xcdatamodeld */; };
 		8CA3C2C421DAE9FF00AA8A09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C2C321DAE9FF00AA8A09 /* Assets.xcassets */; };
 		8CA3C2C721DAE9FF00AA8A09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C2C521DAE9FF00AA8A09 /* LaunchScreen.storyboard */; };
+		8CA3C2D121DAEC5A00AA8A09 /* PokedexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA3C2D021DAEC5A00AA8A09 /* PokedexViewController.swift */; };
+		8CA3C4CE21DAF09C00AA8A09 /* license.html in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C33A21DAF09B00AA8A09 /* license.html */; };
+		8CA3C66021DAF85300AA8A09 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C5FC21DAF85300AA8A09 /* gear.png */; };
+		8CA3C66121DAF85300AA8A09 /* incense-score.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C5FD21DAF85300AA8A09 /* incense-score.png */; };
+		8CA3C66221DAF85300AA8A09 /* insignia.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C5FE21DAF85300AA8A09 /* insignia.png */; };
+		8CA3C66321DAF85300AA8A09 /* augmented-reality-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C5FF21DAF85300AA8A09 /* augmented-reality-1.png */; };
+		8CA3C66421DAF85300AA8A09 /* mega-ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C60021DAF85300AA8A09 /* mega-ball.png */; };
+		8CA3C66521DAF85300AA8A09 /* incense.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C60121DAF85300AA8A09 /* incense.png */; };
+		8CA3C66621DAF85300AA8A09 /* pokecoins.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C60221DAF85300AA8A09 /* pokecoins.png */; };
+		8CA3C66721DAF85300AA8A09 /* dratini.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C60321DAF85300AA8A09 /* dratini.png */; };
+		8CA3C66821DAF85300AA8A09 /* lure-module-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C60421DAF85300AA8A09 /* lure-module-1.png */; };
+		8CA3C66921DAF85300AA8A09 /* fist.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C60521DAF85300AA8A09 /* fist.png */; };
+		8CA3C66A21DAF85300AA8A09 /* lure-module-score.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C60621DAF85300AA8A09 /* lure-module-score.png */; };
+		8CA3C66B21DAF85300AA8A09 /* revive.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C60721DAF85300AA8A09 /* revive.png */; };
+		8CA3C66C21DAF85300AA8A09 /* candy.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C60821DAF85300AA8A09 /* candy.png */; };
+		8CA3C66D21DAF85300AA8A09 /* potion.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C60921DAF85300AA8A09 /* potion.png */; };
+		8CA3C66E21DAF85300AA8A09 /* pikachu.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C60A21DAF85300AA8A09 /* pikachu.png */; };
+		8CA3C66F21DAF85300AA8A09 /* action.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C60B21DAF85300AA8A09 /* action.png */; };
+		8CA3C67021DAF85300AA8A09 /* ultra-ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C60C21DAF85300AA8A09 /* ultra-ball.png */; };
+		8CA3C67121DAF85300AA8A09 /* eevee.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C60D21DAF85300AA8A09 /* eevee.png */; };
+		8CA3C67221DAF85300AA8A09 /* action-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C60E21DAF85300AA8A09 /* action-1.png */; };
+		8CA3C67321DAF85300AA8A09 /* instinct-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C60F21DAF85300AA8A09 /* instinct-1.png */; };
+		8CA3C67421DAF85300AA8A09 /* pidgey.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C61021DAF85300AA8A09 /* pidgey.png */; };
+		8CA3C67521DAF85300AA8A09 /* tornado.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C61121DAF85300AA8A09 /* tornado.png */; };
+		8CA3C67621DAF85300AA8A09 /* mankey.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C61221DAF85300AA8A09 /* mankey.png */; };
+		8CA3C67721DAF85300AA8A09 /* abra.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C61321DAF85300AA8A09 /* abra.png */; };
+		8CA3C67821DAF85300AA8A09 /* bracelet.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C61421DAF85300AA8A09 /* bracelet.png */; };
+		8CA3C67921DAF85300AA8A09 /* pokecoin.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C61521DAF85300AA8A09 /* pokecoin.png */; };
+		8CA3C67A21DAF85300AA8A09 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C61621DAF85300AA8A09 /* map.png */; };
+		8CA3C67B21DAF85300AA8A09 /* blue-team.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C61721DAF85300AA8A09 /* blue-team.png */; };
+		8CA3C67C21DAF85300AA8A09 /* backpack.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C61821DAF85300AA8A09 /* backpack.png */; };
+		8CA3C67D21DAF85300AA8A09 /* instinct.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C61921DAF85300AA8A09 /* instinct.png */; };
+		8CA3C67E21DAF85300AA8A09 /* star-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C61A21DAF85300AA8A09 /* star-1.png */; };
+		8CA3C67F21DAF85300AA8A09 /* smartphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C61B21DAF85300AA8A09 /* smartphone.png */; };
+		8CA3C68021DAF85300AA8A09 /* lucky-egg.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C61C21DAF85300AA8A09 /* lucky-egg.png */; };
+		8CA3C68121DAF85300AA8A09 /* yellow-team.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C61D21DAF85300AA8A09 /* yellow-team.png */; };
+		8CA3C68221DAF85300AA8A09 /* tornado-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C61E21DAF85300AA8A09 /* tornado-1.png */; };
+		8CA3C68321DAF85300AA8A09 /* zubat.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C61F21DAF85300AA8A09 /* zubat.png */; };
+		8CA3C68421DAF85300AA8A09 /* pointer.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C62021DAF85300AA8A09 /* pointer.png */; };
+		8CA3C68521DAF85300AA8A09 /* snorlax.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C62121DAF85300AA8A09 /* snorlax.png */; };
+		8CA3C68621DAF85300AA8A09 /* rattata.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C62221DAF85300AA8A09 /* rattata.png */; };
+		8CA3C68721DAF85300AA8A09 /* weedle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C62321DAF85300AA8A09 /* weedle.png */; };
+		8CA3C68821DAF85300AA8A09 /* player-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C62421DAF85300AA8A09 /* player-1.png */; };
+		8CA3C68921DAF85300AA8A09 /* pawprints.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C62521DAF85300AA8A09 /* pawprints.png */; };
+		8CA3C68A21DAF85300AA8A09 /* pikachu-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C62621DAF85300AA8A09 /* pikachu-2.png */; };
+		8CA3C68B21DAF85300AA8A09 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C62721DAF85300AA8A09 /* heart.png */; };
+		8CA3C68C21DAF85300AA8A09 /* valor-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C62821DAF85300AA8A09 /* valor-1.png */; };
+		8CA3C68D21DAF85300AA8A09 /* egg-incubator-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C62921DAF85300AA8A09 /* egg-incubator-1.png */; };
+		8CA3C68E21DAF85300AA8A09 /* stardust.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C62A21DAF85300AA8A09 /* stardust.png */; };
+		8CA3C68F21DAF85300AA8A09 /* lure-module.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C62B21DAF85300AA8A09 /* lure-module.png */; };
+		8CA3C69021DAF85300AA8A09 /* red-team.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C62C21DAF85300AA8A09 /* red-team.png */; };
+		8CA3C69121DAF85300AA8A09 /* pokeball.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C62D21DAF85300AA8A09 /* pokeball.png */; };
+		8CA3C69221DAF85300AA8A09 /* money-bag.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C62E21DAF85300AA8A09 /* money-bag.png */; };
+		8CA3C69321DAF85300AA8A09 /* pikachu-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C62F21DAF85300AA8A09 /* pikachu-1.png */; };
+		8CA3C69421DAF85300AA8A09 /* valor.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C63021DAF85300AA8A09 /* valor.png */; };
+		8CA3C69521DAF85300AA8A09 /* pokecoins-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C63121DAF85300AA8A09 /* pokecoins-1.png */; };
+		8CA3C69621DAF85300AA8A09 /* pokedex.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C63221DAF85300AA8A09 /* pokedex.png */; };
+		8CA3C69721DAF85300AA8A09 /* combat-power.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C63321DAF85300AA8A09 /* combat-power.png */; };
+		8CA3C69821DAF85300AA8A09 /* open-pokeball.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C63421DAF85300AA8A09 /* open-pokeball.png */; };
+		8CA3C69921DAF85300AA8A09 /* razz-berry.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C63521DAF85300AA8A09 /* razz-berry.png */; };
+		8CA3C69A21DAF85300AA8A09 /* caterpie.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C63621DAF85300AA8A09 /* caterpie.png */; };
+		8CA3C69B21DAF85300AA8A09 /* psyduck.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C63721DAF85300AA8A09 /* psyduck.png */; };
+		8CA3C69C21DAF85300AA8A09 /* new.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C63821DAF85300AA8A09 /* new.png */; };
+		8CA3C69D21DAF85300AA8A09 /* jigglypuff.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C63921DAF85300AA8A09 /* jigglypuff.png */; };
+		8CA3C69E21DAF85300AA8A09 /* superball.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C63A21DAF85300AA8A09 /* superball.png */; };
+		8CA3C69F21DAF85300AA8A09 /* pokeballs.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C63B21DAF85300AA8A09 /* pokeballs.png */; };
+		8CA3C6A021DAF85300AA8A09 /* hyper-potion.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C63C21DAF85300AA8A09 /* hyper-potion.png */; };
+		8CA3C6A121DAF85300AA8A09 /* pokestop.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C63D21DAF85300AA8A09 /* pokestop.png */; };
+		8CA3C6A221DAF85300AA8A09 /* venonat.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C63E21DAF85300AA8A09 /* venonat.png */; };
+		8CA3C6A321DAF85300AA8A09 /* footprints.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C63F21DAF85300AA8A09 /* footprints.png */; };
+		8CA3C6A421DAF85300AA8A09 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C64021DAF85300AA8A09 /* clock.png */; };
+		8CA3C6A521DAF85300AA8A09 /* mystic.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C64121DAF85300AA8A09 /* mystic.png */; };
+		8CA3C6A621DAF85300AA8A09 /* pokestop-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C64221DAF85300AA8A09 /* pokestop-2.png */; };
+		8CA3C6A721DAF85300AA8A09 /* insignia-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C64321DAF85300AA8A09 /* insignia-1.png */; };
+		8CA3C6A821DAF85300AA8A09 /* squirtle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C64421DAF85300AA8A09 /* squirtle.png */; };
+		8CA3C6A921DAF85300AA8A09 /* fight.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C64521DAF85300AA8A09 /* fight.png */; };
+		8CA3C6AA21DAF85300AA8A09 /* compass.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C64621DAF85300AA8A09 /* compass.png */; };
+		8CA3C6AB21DAF85300AA8A09 /* pokestop-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C64721DAF85300AA8A09 /* pokestop-3.png */; };
+		8CA3C6AC21DAF85300AA8A09 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C64821DAF85300AA8A09 /* star.png */; };
+		8CA3C6AD21DAF85300AA8A09 /* mystic-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C64921DAF85300AA8A09 /* mystic-1.png */; };
+		8CA3C6AE21DAF85300AA8A09 /* pokestop-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C64A21DAF85300AA8A09 /* pokestop-1.png */; };
+		8CA3C6AF21DAF85300AA8A09 /* egg-incubator.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C64B21DAF85300AA8A09 /* egg-incubator.png */; };
+		8CA3C6B021DAF85300AA8A09 /* meowth.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C64C21DAF85300AA8A09 /* meowth.png */; };
+		8CA3C6B121DAF85300AA8A09 /* lucky-egg-score.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C64D21DAF85300AA8A09 /* lucky-egg-score.png */; };
+		8CA3C6B221DAF85300AA8A09 /* egg.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C64E21DAF85300AA8A09 /* egg.png */; };
+		8CA3C6B321DAF85300AA8A09 /* bellsprout.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C64F21DAF85300AA8A09 /* bellsprout.png */; };
+		8CA3C6B421DAF85300AA8A09 /* charmander.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C65021DAF85300AA8A09 /* charmander.png */; };
+		8CA3C6B521DAF85300AA8A09 /* pokebag.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C65121DAF85300AA8A09 /* pokebag.png */; };
+		8CA3C6B621DAF85300AA8A09 /* battle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C65221DAF85300AA8A09 /* battle.png */; };
+		8CA3C6B721DAF85300AA8A09 /* bullbasaur.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C65321DAF85300AA8A09 /* bullbasaur.png */; };
+		8CA3C6B821DAF85300AA8A09 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C65421DAF85300AA8A09 /* camera.png */; };
+		8CA3C6B921DAF85300AA8A09 /* gotcha.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C65521DAF85300AA8A09 /* gotcha.png */; };
+		8CA3C6BA21DAF85300AA8A09 /* lucky-eggs.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C65621DAF85300AA8A09 /* lucky-eggs.png */; };
+		8CA3C6BB21DAF85300AA8A09 /* up-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C65721DAF85300AA8A09 /* up-arrow.png */; };
+		8CA3C6BC21DAF85300AA8A09 /* crown.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C65821DAF85300AA8A09 /* crown.png */; };
+		8CA3C6BD21DAF85300AA8A09 /* egg-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C65921DAF85300AA8A09 /* egg-1.png */; };
+		8CA3C6BE21DAF85300AA8A09 /* augmented-reality.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C65A21DAF85300AA8A09 /* augmented-reality.png */; };
+		8CA3C6BF21DAF85300AA8A09 /* scene.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C65B21DAF85300AA8A09 /* scene.png */; };
+		8CA3C6C021DAF85300AA8A09 /* incenses.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C65C21DAF85300AA8A09 /* incenses.png */; };
+		8CA3C6C121DAF85300AA8A09 /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C65D21DAF85300AA8A09 /* player.png */; };
+		8CA3C6C221DAF85300AA8A09 /* super-potion.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C65E21DAF85300AA8A09 /* super-potion.png */; };
+		8CA3C6C321DAF85300AA8A09 /* mew.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C65F21DAF85300AA8A09 /* mew.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8CA3C2B621DAE9FC00AA8A09 /* Pokemon Go Get Em.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pokemon Go Get Em.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CA3C2B921DAE9FC00AA8A09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8CA3C2BB21DAE9FC00AA8A09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8CA3C2BB21DAE9FC00AA8A09 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8CA3C2BE21DAE9FC00AA8A09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CA3C2C121DAE9FC00AA8A09 /* Pokemon_Go_Get_Em.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pokemon_Go_Get_Em.xcdatamodel; sourceTree = "<group>"; };
 		8CA3C2C321DAE9FF00AA8A09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CA3C2C621DAE9FF00AA8A09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CA3C2C821DAE9FF00AA8A09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CA3C2D021DAEC5A00AA8A09 /* PokedexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexViewController.swift; sourceTree = "<group>"; };
+		8CA3C2D221DAEF0100AA8A09 /* Credits.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Credits.md; sourceTree = "<group>"; };
+		8CA3C33A21DAF09B00AA8A09 /* license.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = license.html; sourceTree = "<group>"; };
+		8CA3C5FC21DAF85300AA8A09 /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
+		8CA3C5FD21DAF85300AA8A09 /* incense-score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "incense-score.png"; sourceTree = "<group>"; };
+		8CA3C5FE21DAF85300AA8A09 /* insignia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = insignia.png; sourceTree = "<group>"; };
+		8CA3C5FF21DAF85300AA8A09 /* augmented-reality-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "augmented-reality-1.png"; sourceTree = "<group>"; };
+		8CA3C60021DAF85300AA8A09 /* mega-ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mega-ball.png"; sourceTree = "<group>"; };
+		8CA3C60121DAF85300AA8A09 /* incense.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = incense.png; sourceTree = "<group>"; };
+		8CA3C60221DAF85300AA8A09 /* pokecoins.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pokecoins.png; sourceTree = "<group>"; };
+		8CA3C60321DAF85300AA8A09 /* dratini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dratini.png; sourceTree = "<group>"; };
+		8CA3C60421DAF85300AA8A09 /* lure-module-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lure-module-1.png"; sourceTree = "<group>"; };
+		8CA3C60521DAF85300AA8A09 /* fist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fist.png; sourceTree = "<group>"; };
+		8CA3C60621DAF85300AA8A09 /* lure-module-score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lure-module-score.png"; sourceTree = "<group>"; };
+		8CA3C60721DAF85300AA8A09 /* revive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = revive.png; sourceTree = "<group>"; };
+		8CA3C60821DAF85300AA8A09 /* candy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = candy.png; sourceTree = "<group>"; };
+		8CA3C60921DAF85300AA8A09 /* potion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = potion.png; sourceTree = "<group>"; };
+		8CA3C60A21DAF85300AA8A09 /* pikachu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pikachu.png; sourceTree = "<group>"; };
+		8CA3C60B21DAF85300AA8A09 /* action.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = action.png; sourceTree = "<group>"; };
+		8CA3C60C21DAF85300AA8A09 /* ultra-ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ultra-ball.png"; sourceTree = "<group>"; };
+		8CA3C60D21DAF85300AA8A09 /* eevee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eevee.png; sourceTree = "<group>"; };
+		8CA3C60E21DAF85300AA8A09 /* action-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action-1.png"; sourceTree = "<group>"; };
+		8CA3C60F21DAF85300AA8A09 /* instinct-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instinct-1.png"; sourceTree = "<group>"; };
+		8CA3C61021DAF85300AA8A09 /* pidgey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pidgey.png; sourceTree = "<group>"; };
+		8CA3C61121DAF85300AA8A09 /* tornado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tornado.png; sourceTree = "<group>"; };
+		8CA3C61221DAF85300AA8A09 /* mankey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mankey.png; sourceTree = "<group>"; };
+		8CA3C61321DAF85300AA8A09 /* abra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abra.png; sourceTree = "<group>"; };
+		8CA3C61421DAF85300AA8A09 /* bracelet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bracelet.png; sourceTree = "<group>"; };
+		8CA3C61521DAF85300AA8A09 /* pokecoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pokecoin.png; sourceTree = "<group>"; };
+		8CA3C61621DAF85300AA8A09 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		8CA3C61721DAF85300AA8A09 /* blue-team.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue-team.png"; sourceTree = "<group>"; };
+		8CA3C61821DAF85300AA8A09 /* backpack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backpack.png; sourceTree = "<group>"; };
+		8CA3C61921DAF85300AA8A09 /* instinct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instinct.png; sourceTree = "<group>"; };
+		8CA3C61A21DAF85300AA8A09 /* star-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-1.png"; sourceTree = "<group>"; };
+		8CA3C61B21DAF85300AA8A09 /* smartphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smartphone.png; sourceTree = "<group>"; };
+		8CA3C61C21DAF85300AA8A09 /* lucky-egg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lucky-egg.png"; sourceTree = "<group>"; };
+		8CA3C61D21DAF85300AA8A09 /* yellow-team.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yellow-team.png"; sourceTree = "<group>"; };
+		8CA3C61E21DAF85300AA8A09 /* tornado-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tornado-1.png"; sourceTree = "<group>"; };
+		8CA3C61F21DAF85300AA8A09 /* zubat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zubat.png; sourceTree = "<group>"; };
+		8CA3C62021DAF85300AA8A09 /* pointer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointer.png; sourceTree = "<group>"; };
+		8CA3C62121DAF85300AA8A09 /* snorlax.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snorlax.png; sourceTree = "<group>"; };
+		8CA3C62221DAF85300AA8A09 /* rattata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rattata.png; sourceTree = "<group>"; };
+		8CA3C62321DAF85300AA8A09 /* weedle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weedle.png; sourceTree = "<group>"; };
+		8CA3C62421DAF85300AA8A09 /* player-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player-1.png"; sourceTree = "<group>"; };
+		8CA3C62521DAF85300AA8A09 /* pawprints.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pawprints.png; sourceTree = "<group>"; };
+		8CA3C62621DAF85300AA8A09 /* pikachu-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pikachu-2.png"; sourceTree = "<group>"; };
+		8CA3C62721DAF85300AA8A09 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		8CA3C62821DAF85300AA8A09 /* valor-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "valor-1.png"; sourceTree = "<group>"; };
+		8CA3C62921DAF85300AA8A09 /* egg-incubator-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "egg-incubator-1.png"; sourceTree = "<group>"; };
+		8CA3C62A21DAF85300AA8A09 /* stardust.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stardust.png; sourceTree = "<group>"; };
+		8CA3C62B21DAF85300AA8A09 /* lure-module.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lure-module.png"; sourceTree = "<group>"; };
+		8CA3C62C21DAF85300AA8A09 /* red-team.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-team.png"; sourceTree = "<group>"; };
+		8CA3C62D21DAF85300AA8A09 /* pokeball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pokeball.png; sourceTree = "<group>"; };
+		8CA3C62E21DAF85300AA8A09 /* money-bag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "money-bag.png"; sourceTree = "<group>"; };
+		8CA3C62F21DAF85300AA8A09 /* pikachu-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pikachu-1.png"; sourceTree = "<group>"; };
+		8CA3C63021DAF85300AA8A09 /* valor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = valor.png; sourceTree = "<group>"; };
+		8CA3C63121DAF85300AA8A09 /* pokecoins-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pokecoins-1.png"; sourceTree = "<group>"; };
+		8CA3C63221DAF85300AA8A09 /* pokedex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pokedex.png; sourceTree = "<group>"; };
+		8CA3C63321DAF85300AA8A09 /* combat-power.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "combat-power.png"; sourceTree = "<group>"; };
+		8CA3C63421DAF85300AA8A09 /* open-pokeball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "open-pokeball.png"; sourceTree = "<group>"; };
+		8CA3C63521DAF85300AA8A09 /* razz-berry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "razz-berry.png"; sourceTree = "<group>"; };
+		8CA3C63621DAF85300AA8A09 /* caterpie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = caterpie.png; sourceTree = "<group>"; };
+		8CA3C63721DAF85300AA8A09 /* psyduck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = psyduck.png; sourceTree = "<group>"; };
+		8CA3C63821DAF85300AA8A09 /* new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new.png; sourceTree = "<group>"; };
+		8CA3C63921DAF85300AA8A09 /* jigglypuff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jigglypuff.png; sourceTree = "<group>"; };
+		8CA3C63A21DAF85300AA8A09 /* superball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = superball.png; sourceTree = "<group>"; };
+		8CA3C63B21DAF85300AA8A09 /* pokeballs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pokeballs.png; sourceTree = "<group>"; };
+		8CA3C63C21DAF85300AA8A09 /* hyper-potion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hyper-potion.png"; sourceTree = "<group>"; };
+		8CA3C63D21DAF85300AA8A09 /* pokestop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pokestop.png; sourceTree = "<group>"; };
+		8CA3C63E21DAF85300AA8A09 /* venonat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = venonat.png; sourceTree = "<group>"; };
+		8CA3C63F21DAF85300AA8A09 /* footprints.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = footprints.png; sourceTree = "<group>"; };
+		8CA3C64021DAF85300AA8A09 /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
+		8CA3C64121DAF85300AA8A09 /* mystic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mystic.png; sourceTree = "<group>"; };
+		8CA3C64221DAF85300AA8A09 /* pokestop-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pokestop-2.png"; sourceTree = "<group>"; };
+		8CA3C64321DAF85300AA8A09 /* insignia-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "insignia-1.png"; sourceTree = "<group>"; };
+		8CA3C64421DAF85300AA8A09 /* squirtle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squirtle.png; sourceTree = "<group>"; };
+		8CA3C64521DAF85300AA8A09 /* fight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fight.png; sourceTree = "<group>"; };
+		8CA3C64621DAF85300AA8A09 /* compass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass.png; sourceTree = "<group>"; };
+		8CA3C64721DAF85300AA8A09 /* pokestop-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pokestop-3.png"; sourceTree = "<group>"; };
+		8CA3C64821DAF85300AA8A09 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		8CA3C64921DAF85300AA8A09 /* mystic-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mystic-1.png"; sourceTree = "<group>"; };
+		8CA3C64A21DAF85300AA8A09 /* pokestop-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pokestop-1.png"; sourceTree = "<group>"; };
+		8CA3C64B21DAF85300AA8A09 /* egg-incubator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "egg-incubator.png"; sourceTree = "<group>"; };
+		8CA3C64C21DAF85300AA8A09 /* meowth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meowth.png; sourceTree = "<group>"; };
+		8CA3C64D21DAF85300AA8A09 /* lucky-egg-score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lucky-egg-score.png"; sourceTree = "<group>"; };
+		8CA3C64E21DAF85300AA8A09 /* egg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = egg.png; sourceTree = "<group>"; };
+		8CA3C64F21DAF85300AA8A09 /* bellsprout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bellsprout.png; sourceTree = "<group>"; };
+		8CA3C65021DAF85300AA8A09 /* charmander.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = charmander.png; sourceTree = "<group>"; };
+		8CA3C65121DAF85300AA8A09 /* pokebag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pokebag.png; sourceTree = "<group>"; };
+		8CA3C65221DAF85300AA8A09 /* battle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battle.png; sourceTree = "<group>"; };
+		8CA3C65321DAF85300AA8A09 /* bullbasaur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullbasaur.png; sourceTree = "<group>"; };
+		8CA3C65421DAF85300AA8A09 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		8CA3C65521DAF85300AA8A09 /* gotcha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gotcha.png; sourceTree = "<group>"; };
+		8CA3C65621DAF85300AA8A09 /* lucky-eggs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lucky-eggs.png"; sourceTree = "<group>"; };
+		8CA3C65721DAF85300AA8A09 /* up-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up-arrow.png"; sourceTree = "<group>"; };
+		8CA3C65821DAF85300AA8A09 /* crown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crown.png; sourceTree = "<group>"; };
+		8CA3C65921DAF85300AA8A09 /* egg-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "egg-1.png"; sourceTree = "<group>"; };
+		8CA3C65A21DAF85300AA8A09 /* augmented-reality.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "augmented-reality.png"; sourceTree = "<group>"; };
+		8CA3C65B21DAF85300AA8A09 /* scene.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scene.png; sourceTree = "<group>"; };
+		8CA3C65C21DAF85300AA8A09 /* incenses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = incenses.png; sourceTree = "<group>"; };
+		8CA3C65D21DAF85300AA8A09 /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
+		8CA3C65E21DAF85300AA8A09 /* super-potion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "super-potion.png"; sourceTree = "<group>"; };
+		8CA3C65F21DAF85300AA8A09 /* mew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mew.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +262,157 @@
 			isa = PBXGroup;
 			children = (
 				8CA3C2B921DAE9FC00AA8A09 /* AppDelegate.swift */,
-				8CA3C2BB21DAE9FC00AA8A09 /* ViewController.swift */,
-				8CA3C2BD21DAE9FC00AA8A09 /* Main.storyboard */,
+				8CA3C2CF21DAEA2200AA8A09 /* Views */,
+				8CA3C2CE21DAEA1100AA8A09 /* Controllers */,
 				8CA3C2C321DAE9FF00AA8A09 /* Assets.xcassets */,
+				8CA3C2D321DAF09B00AA8A09 /* Images */,
 				8CA3C2C521DAE9FF00AA8A09 /* LaunchScreen.storyboard */,
 				8CA3C2C821DAE9FF00AA8A09 /* Info.plist */,
 				8CA3C2C021DAE9FC00AA8A09 /* Pokemon_Go_Get_Em.xcdatamodeld */,
+				8CA3C2D221DAEF0100AA8A09 /* Credits.md */,
 			);
 			path = "Pokemon Go Get Em";
+			sourceTree = "<group>";
+		};
+		8CA3C2CE21DAEA1100AA8A09 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8CA3C2BB21DAE9FC00AA8A09 /* MapViewController.swift */,
+				8CA3C2D021DAEC5A00AA8A09 /* PokedexViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8CA3C2CF21DAEA2200AA8A09 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8CA3C2BD21DAE9FC00AA8A09 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8CA3C2D321DAF09B00AA8A09 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8CA3C5FB21DAF85300AA8A09 /* png */,
+				8CA3C33921DAF09B00AA8A09 /* license */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		8CA3C33921DAF09B00AA8A09 /* license */ = {
+			isa = PBXGroup;
+			children = (
+				8CA3C33A21DAF09B00AA8A09 /* license.html */,
+			);
+			path = license;
+			sourceTree = "<group>";
+		};
+		8CA3C5FB21DAF85300AA8A09 /* png */ = {
+			isa = PBXGroup;
+			children = (
+				8CA3C5FC21DAF85300AA8A09 /* gear.png */,
+				8CA3C5FD21DAF85300AA8A09 /* incense-score.png */,
+				8CA3C5FE21DAF85300AA8A09 /* insignia.png */,
+				8CA3C5FF21DAF85300AA8A09 /* augmented-reality-1.png */,
+				8CA3C60021DAF85300AA8A09 /* mega-ball.png */,
+				8CA3C60121DAF85300AA8A09 /* incense.png */,
+				8CA3C60221DAF85300AA8A09 /* pokecoins.png */,
+				8CA3C60321DAF85300AA8A09 /* dratini.png */,
+				8CA3C60421DAF85300AA8A09 /* lure-module-1.png */,
+				8CA3C60521DAF85300AA8A09 /* fist.png */,
+				8CA3C60621DAF85300AA8A09 /* lure-module-score.png */,
+				8CA3C60721DAF85300AA8A09 /* revive.png */,
+				8CA3C60821DAF85300AA8A09 /* candy.png */,
+				8CA3C60921DAF85300AA8A09 /* potion.png */,
+				8CA3C60A21DAF85300AA8A09 /* pikachu.png */,
+				8CA3C60B21DAF85300AA8A09 /* action.png */,
+				8CA3C60C21DAF85300AA8A09 /* ultra-ball.png */,
+				8CA3C60D21DAF85300AA8A09 /* eevee.png */,
+				8CA3C60E21DAF85300AA8A09 /* action-1.png */,
+				8CA3C60F21DAF85300AA8A09 /* instinct-1.png */,
+				8CA3C61021DAF85300AA8A09 /* pidgey.png */,
+				8CA3C61121DAF85300AA8A09 /* tornado.png */,
+				8CA3C61221DAF85300AA8A09 /* mankey.png */,
+				8CA3C61321DAF85300AA8A09 /* abra.png */,
+				8CA3C61421DAF85300AA8A09 /* bracelet.png */,
+				8CA3C61521DAF85300AA8A09 /* pokecoin.png */,
+				8CA3C61621DAF85300AA8A09 /* map.png */,
+				8CA3C61721DAF85300AA8A09 /* blue-team.png */,
+				8CA3C61821DAF85300AA8A09 /* backpack.png */,
+				8CA3C61921DAF85300AA8A09 /* instinct.png */,
+				8CA3C61A21DAF85300AA8A09 /* star-1.png */,
+				8CA3C61B21DAF85300AA8A09 /* smartphone.png */,
+				8CA3C61C21DAF85300AA8A09 /* lucky-egg.png */,
+				8CA3C61D21DAF85300AA8A09 /* yellow-team.png */,
+				8CA3C61E21DAF85300AA8A09 /* tornado-1.png */,
+				8CA3C61F21DAF85300AA8A09 /* zubat.png */,
+				8CA3C62021DAF85300AA8A09 /* pointer.png */,
+				8CA3C62121DAF85300AA8A09 /* snorlax.png */,
+				8CA3C62221DAF85300AA8A09 /* rattata.png */,
+				8CA3C62321DAF85300AA8A09 /* weedle.png */,
+				8CA3C62421DAF85300AA8A09 /* player-1.png */,
+				8CA3C62521DAF85300AA8A09 /* pawprints.png */,
+				8CA3C62621DAF85300AA8A09 /* pikachu-2.png */,
+				8CA3C62721DAF85300AA8A09 /* heart.png */,
+				8CA3C62821DAF85300AA8A09 /* valor-1.png */,
+				8CA3C62921DAF85300AA8A09 /* egg-incubator-1.png */,
+				8CA3C62A21DAF85300AA8A09 /* stardust.png */,
+				8CA3C62B21DAF85300AA8A09 /* lure-module.png */,
+				8CA3C62C21DAF85300AA8A09 /* red-team.png */,
+				8CA3C62D21DAF85300AA8A09 /* pokeball.png */,
+				8CA3C62E21DAF85300AA8A09 /* money-bag.png */,
+				8CA3C62F21DAF85300AA8A09 /* pikachu-1.png */,
+				8CA3C63021DAF85300AA8A09 /* valor.png */,
+				8CA3C63121DAF85300AA8A09 /* pokecoins-1.png */,
+				8CA3C63221DAF85300AA8A09 /* pokedex.png */,
+				8CA3C63321DAF85300AA8A09 /* combat-power.png */,
+				8CA3C63421DAF85300AA8A09 /* open-pokeball.png */,
+				8CA3C63521DAF85300AA8A09 /* razz-berry.png */,
+				8CA3C63621DAF85300AA8A09 /* caterpie.png */,
+				8CA3C63721DAF85300AA8A09 /* psyduck.png */,
+				8CA3C63821DAF85300AA8A09 /* new.png */,
+				8CA3C63921DAF85300AA8A09 /* jigglypuff.png */,
+				8CA3C63A21DAF85300AA8A09 /* superball.png */,
+				8CA3C63B21DAF85300AA8A09 /* pokeballs.png */,
+				8CA3C63C21DAF85300AA8A09 /* hyper-potion.png */,
+				8CA3C63D21DAF85300AA8A09 /* pokestop.png */,
+				8CA3C63E21DAF85300AA8A09 /* venonat.png */,
+				8CA3C63F21DAF85300AA8A09 /* footprints.png */,
+				8CA3C64021DAF85300AA8A09 /* clock.png */,
+				8CA3C64121DAF85300AA8A09 /* mystic.png */,
+				8CA3C64221DAF85300AA8A09 /* pokestop-2.png */,
+				8CA3C64321DAF85300AA8A09 /* insignia-1.png */,
+				8CA3C64421DAF85300AA8A09 /* squirtle.png */,
+				8CA3C64521DAF85300AA8A09 /* fight.png */,
+				8CA3C64621DAF85300AA8A09 /* compass.png */,
+				8CA3C64721DAF85300AA8A09 /* pokestop-3.png */,
+				8CA3C64821DAF85300AA8A09 /* star.png */,
+				8CA3C64921DAF85300AA8A09 /* mystic-1.png */,
+				8CA3C64A21DAF85300AA8A09 /* pokestop-1.png */,
+				8CA3C64B21DAF85300AA8A09 /* egg-incubator.png */,
+				8CA3C64C21DAF85300AA8A09 /* meowth.png */,
+				8CA3C64D21DAF85300AA8A09 /* lucky-egg-score.png */,
+				8CA3C64E21DAF85300AA8A09 /* egg.png */,
+				8CA3C64F21DAF85300AA8A09 /* bellsprout.png */,
+				8CA3C65021DAF85300AA8A09 /* charmander.png */,
+				8CA3C65121DAF85300AA8A09 /* pokebag.png */,
+				8CA3C65221DAF85300AA8A09 /* battle.png */,
+				8CA3C65321DAF85300AA8A09 /* bullbasaur.png */,
+				8CA3C65421DAF85300AA8A09 /* camera.png */,
+				8CA3C65521DAF85300AA8A09 /* gotcha.png */,
+				8CA3C65621DAF85300AA8A09 /* lucky-eggs.png */,
+				8CA3C65721DAF85300AA8A09 /* up-arrow.png */,
+				8CA3C65821DAF85300AA8A09 /* crown.png */,
+				8CA3C65921DAF85300AA8A09 /* egg-1.png */,
+				8CA3C65A21DAF85300AA8A09 /* augmented-reality.png */,
+				8CA3C65B21DAF85300AA8A09 /* scene.png */,
+				8CA3C65C21DAF85300AA8A09 /* incenses.png */,
+				8CA3C65D21DAF85300AA8A09 /* player.png */,
+				8CA3C65E21DAF85300AA8A09 /* super-potion.png */,
+				8CA3C65F21DAF85300AA8A09 /* mew.png */,
+			);
+			path = png;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +473,110 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CA3C67221DAF85300AA8A09 /* action-1.png in Resources */,
+				8CA3C6AA21DAF85300AA8A09 /* compass.png in Resources */,
+				8CA3C6BF21DAF85300AA8A09 /* scene.png in Resources */,
+				8CA3C69B21DAF85300AA8A09 /* psyduck.png in Resources */,
+				8CA3C69121DAF85300AA8A09 /* pokeball.png in Resources */,
+				8CA3C6B821DAF85300AA8A09 /* camera.png in Resources */,
+				8CA3C66621DAF85300AA8A09 /* pokecoins.png in Resources */,
+				8CA3C69321DAF85300AA8A09 /* pikachu-1.png in Resources */,
+				8CA3C69221DAF85300AA8A09 /* money-bag.png in Resources */,
+				8CA3C6A521DAF85300AA8A09 /* mystic.png in Resources */,
 				8CA3C2C721DAE9FF00AA8A09 /* LaunchScreen.storyboard in Resources */,
+				8CA3C67021DAF85300AA8A09 /* ultra-ball.png in Resources */,
+				8CA3C6B021DAF85300AA8A09 /* meowth.png in Resources */,
+				8CA3C6A721DAF85300AA8A09 /* insignia-1.png in Resources */,
+				8CA3C6B221DAF85300AA8A09 /* egg.png in Resources */,
+				8CA3C6BA21DAF85300AA8A09 /* lucky-eggs.png in Resources */,
+				8CA3C6B321DAF85300AA8A09 /* bellsprout.png in Resources */,
+				8CA3C66321DAF85300AA8A09 /* augmented-reality-1.png in Resources */,
+				8CA3C67421DAF85300AA8A09 /* pidgey.png in Resources */,
+				8CA3C67F21DAF85300AA8A09 /* smartphone.png in Resources */,
+				8CA3C6B521DAF85300AA8A09 /* pokebag.png in Resources */,
+				8CA3C6A621DAF85300AA8A09 /* pokestop-2.png in Resources */,
+				8CA3C6A421DAF85300AA8A09 /* clock.png in Resources */,
+				8CA3C68E21DAF85300AA8A09 /* stardust.png in Resources */,
+				8CA3C6BC21DAF85300AA8A09 /* crown.png in Resources */,
+				8CA3C66921DAF85300AA8A09 /* fist.png in Resources */,
+				8CA3C6C121DAF85300AA8A09 /* player.png in Resources */,
+				8CA3C66221DAF85300AA8A09 /* insignia.png in Resources */,
+				8CA3C66A21DAF85300AA8A09 /* lure-module-score.png in Resources */,
+				8CA3C68321DAF85300AA8A09 /* zubat.png in Resources */,
+				8CA3C69521DAF85300AA8A09 /* pokecoins-1.png in Resources */,
+				8CA3C6AB21DAF85300AA8A09 /* pokestop-3.png in Resources */,
+				8CA3C68121DAF85300AA8A09 /* yellow-team.png in Resources */,
+				8CA3C69421DAF85300AA8A09 /* valor.png in Resources */,
+				8CA3C6C021DAF85300AA8A09 /* incenses.png in Resources */,
+				8CA3C68021DAF85300AA8A09 /* lucky-egg.png in Resources */,
+				8CA3C66021DAF85300AA8A09 /* gear.png in Resources */,
+				8CA3C6C221DAF85300AA8A09 /* super-potion.png in Resources */,
+				8CA3C67A21DAF85300AA8A09 /* map.png in Resources */,
+				8CA3C68521DAF85300AA8A09 /* snorlax.png in Resources */,
+				8CA3C6AC21DAF85300AA8A09 /* star.png in Resources */,
+				8CA3C6B421DAF85300AA8A09 /* charmander.png in Resources */,
+				8CA3C68F21DAF85300AA8A09 /* lure-module.png in Resources */,
+				8CA3C6C321DAF85300AA8A09 /* mew.png in Resources */,
+				8CA3C68B21DAF85300AA8A09 /* heart.png in Resources */,
+				8CA3C66721DAF85300AA8A09 /* dratini.png in Resources */,
+				8CA3C6B721DAF85300AA8A09 /* bullbasaur.png in Resources */,
+				8CA3C66D21DAF85300AA8A09 /* potion.png in Resources */,
+				8CA3C66C21DAF85300AA8A09 /* candy.png in Resources */,
+				8CA3C69921DAF85300AA8A09 /* razz-berry.png in Resources */,
+				8CA3C6B921DAF85300AA8A09 /* gotcha.png in Resources */,
+				8CA3C69721DAF85300AA8A09 /* combat-power.png in Resources */,
+				8CA3C6A021DAF85300AA8A09 /* hyper-potion.png in Resources */,
+				8CA3C68721DAF85300AA8A09 /* weedle.png in Resources */,
+				8CA3C6A121DAF85300AA8A09 /* pokestop.png in Resources */,
+				8CA3C66121DAF85300AA8A09 /* incense-score.png in Resources */,
+				8CA3C68621DAF85300AA8A09 /* rattata.png in Resources */,
+				8CA3C66F21DAF85300AA8A09 /* action.png in Resources */,
+				8CA3C69E21DAF85300AA8A09 /* superball.png in Resources */,
+				8CA3C66521DAF85300AA8A09 /* incense.png in Resources */,
+				8CA3C67621DAF85300AA8A09 /* mankey.png in Resources */,
+				8CA3C69D21DAF85300AA8A09 /* jigglypuff.png in Resources */,
+				8CA3C68C21DAF85300AA8A09 /* valor-1.png in Resources */,
+				8CA3C69821DAF85300AA8A09 /* open-pokeball.png in Resources */,
+				8CA3C6BD21DAF85300AA8A09 /* egg-1.png in Resources */,
 				8CA3C2C421DAE9FF00AA8A09 /* Assets.xcassets in Resources */,
+				8CA3C66421DAF85300AA8A09 /* mega-ball.png in Resources */,
+				8CA3C6BB21DAF85300AA8A09 /* up-arrow.png in Resources */,
+				8CA3C68221DAF85300AA8A09 /* tornado-1.png in Resources */,
+				8CA3C67821DAF85300AA8A09 /* bracelet.png in Resources */,
+				8CA3C68D21DAF85300AA8A09 /* egg-incubator-1.png in Resources */,
+				8CA3C69621DAF85300AA8A09 /* pokedex.png in Resources */,
+				8CA3C4CE21DAF09C00AA8A09 /* license.html in Resources */,
+				8CA3C6AD21DAF85300AA8A09 /* mystic-1.png in Resources */,
+				8CA3C67921DAF85300AA8A09 /* pokecoin.png in Resources */,
+				8CA3C66821DAF85300AA8A09 /* lure-module-1.png in Resources */,
+				8CA3C6B621DAF85300AA8A09 /* battle.png in Resources */,
+				8CA3C69021DAF85300AA8A09 /* red-team.png in Resources */,
+				8CA3C68821DAF85300AA8A09 /* player-1.png in Resources */,
+				8CA3C67C21DAF85300AA8A09 /* backpack.png in Resources */,
+				8CA3C6A821DAF85300AA8A09 /* squirtle.png in Resources */,
+				8CA3C67321DAF85300AA8A09 /* instinct-1.png in Resources */,
+				8CA3C6B121DAF85300AA8A09 /* lucky-egg-score.png in Resources */,
+				8CA3C69F21DAF85300AA8A09 /* pokeballs.png in Resources */,
+				8CA3C6A221DAF85300AA8A09 /* venonat.png in Resources */,
+				8CA3C6A321DAF85300AA8A09 /* footprints.png in Resources */,
+				8CA3C6BE21DAF85300AA8A09 /* augmented-reality.png in Resources */,
+				8CA3C66E21DAF85300AA8A09 /* pikachu.png in Resources */,
+				8CA3C6AE21DAF85300AA8A09 /* pokestop-1.png in Resources */,
+				8CA3C66B21DAF85300AA8A09 /* revive.png in Resources */,
+				8CA3C67521DAF85300AA8A09 /* tornado.png in Resources */,
+				8CA3C6AF21DAF85300AA8A09 /* egg-incubator.png in Resources */,
+				8CA3C69A21DAF85300AA8A09 /* caterpie.png in Resources */,
+				8CA3C69C21DAF85300AA8A09 /* new.png in Resources */,
+				8CA3C68A21DAF85300AA8A09 /* pikachu-2.png in Resources */,
+				8CA3C67B21DAF85300AA8A09 /* blue-team.png in Resources */,
+				8CA3C67721DAF85300AA8A09 /* abra.png in Resources */,
+				8CA3C68921DAF85300AA8A09 /* pawprints.png in Resources */,
+				8CA3C6A921DAF85300AA8A09 /* fight.png in Resources */,
+				8CA3C67D21DAF85300AA8A09 /* instinct.png in Resources */,
+				8CA3C67121DAF85300AA8A09 /* eevee.png in Resources */,
 				8CA3C2BF21DAE9FC00AA8A09 /* Main.storyboard in Resources */,
+				8CA3C67E21DAF85300AA8A09 /* star-1.png in Resources */,
+				8CA3C68421DAF85300AA8A09 /* pointer.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +587,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CA3C2BC21DAE9FC00AA8A09 /* ViewController.swift in Sources */,
+				8CA3C2BC21DAE9FC00AA8A09 /* MapViewController.swift in Sources */,
+				8CA3C2D121DAEC5A00AA8A09 /* PokedexViewController.swift in Sources */,
 				8CA3C2BA21DAE9FC00AA8A09 /* AppDelegate.swift in Sources */,
 				8CA3C2C221DAE9FC00AA8A09 /* Pokemon_Go_Get_Em.xcdatamodeld in Sources */,
 			);
