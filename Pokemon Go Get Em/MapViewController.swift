@@ -17,10 +17,14 @@ class MapViewController: UIViewController {
     //MARK:- Properties
     var manager = CLLocationManager()
     var updateCount = 0
+    var pokemonArray = [Pokemon]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         manager.delegate = self
+        
+        //grab your Pokemon from CoreData
+        pokemonArray = getAllPokemon()
         
         //check whether or not the user has authorized location gathering
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
@@ -38,6 +42,27 @@ class MapViewController: UIViewController {
         manager.startUpdatingLocation()
         mapView.delegate = self
         
+        //here, we'll start creating new Pokemon after some interval, at a random location
+//        Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true) { (_) in
+//            //place the pokemon on the screen
+//        }
+        Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(generateNewPokemonOnMap), userInfo: nil, repeats: true)
+    }
+    
+    @objc private func generateNewPokemonOnMap() {
+        //get the user's starting location
+        if let center = manager.location?.coordinate {
+            
+            //generate a random location for the pokemon
+            var annoCoord = center
+            annoCoord.latitude += (Double.random(in: 0...200) - 100.0) / 5000.0
+            annoCoord.longitude += (Double.random(in: 0...200) - 100.0) / 5000.0
+            
+            //grab a random pokemon from the array
+            if let pokemon = pokemonArray.randomElement() {
+                //create the annotation
+            }
+        }
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
@@ -74,14 +99,32 @@ class MapViewController: UIViewController {
         
         return annoView
     }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        //now each time this function gets called, we should use the update count to make sure we're not constantly centering
+        if updateCount < 3 {
+            centerMapViewOnUser(animated: false)
+            updateCount += 1
+        } else {
+            manager.stopUpdatingLocation()
+        }
+        
+        
+    }
 
     
     //MARK:- @IBActions
     @IBAction func centerMapButtonTapped(_ sender: UIButton) {
+        centerMapViewOnUser(animated: true)
+    }
+    
+    private func centerMapViewOnUser(animated: Bool) {
         //get the user location from the manager
         guard let center = manager.location?.coordinate else { return }
         let region = MKCoordinateRegion(center: center, latitudinalMeters: 100, longitudinalMeters: 100) //translates to roughly 110 yards
-        mapView.setRegion(region, animated: true)
+        mapView.setRegion(region, animated: animated)
+
     }
     
 
