@@ -18,7 +18,7 @@ class MapViewController: UIViewController {
     var manager = CLLocationManager()
     var updateCount = 0
     var allPokemon = [Pokemon]()
-    var pokemonSpawnRate: Double = 10
+    var pokemonSpawnRate: Double = 5
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,7 +80,7 @@ class MapViewController: UIViewController {
         }
     }
     
-    //MARK:- Pokemon generation method
+    //MARK:- Pokemon generation/removal methods
     @objc private func generateNewPokemonOnMap() {
         //get the user's starting location
         if let center = manager.location?.coordinate {
@@ -92,16 +92,33 @@ class MapViewController: UIViewController {
                     //generate a random location for the pokemon
                     var annoCoord = center
                     //create the annotation and add it to the mapView
-                    annoCoord.latitude += (Double.random(in: 0...200) - 100.0) / 20000.0
-                    annoCoord.longitude += (Double.random(in: 0...200) - 100.0) / 20000.0
+                    annoCoord.latitude += (Double.random(in: 0...200) - 100.0) / 10000.0
+                    annoCoord.longitude += (Double.random(in: 0...200) - 100.0) / 10000.0
 
                     let anno = PokeAnnotation(coordinate: annoCoord, pokemon: randomPokemon)
                     mapView.addAnnotation(anno)
                 }
             }
+            
+//            Timer.scheduledTimer(timeInterval: pokemonSpawnRate / 2.0, target: self, selector: #selector(removeOldPokemonFromMap), userInfo: nil, repeats: true)
+            removeOldPokemonFromMap()
         }
     }
     
+    @objc private func removeOldPokemonFromMap() {
+        var allPokeAnnotations = [PokeAnnotation]()
+        
+        for annotation in mapView.annotations {
+            if annotation is PokeAnnotation {
+                allPokeAnnotations.append(annotation as! PokeAnnotation)
+            }
+        }
+
+        //remove a random annotation
+        guard let annotationToRemove = allPokeAnnotations.randomElement() else { return }
+        mapView.removeAnnotation(annotationToRemove)
+        
+    }
     
     //MARK:- Custom annotation view method
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
