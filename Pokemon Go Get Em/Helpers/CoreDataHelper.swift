@@ -61,3 +61,24 @@ func getAllPokemon() -> [Pokemon] {
     }
     return [] //if this returns, shit went a little sideways.
 }
+
+//MARK:- Pokedex methods
+func getPokemonForPokedex(caught: Bool) -> [Pokemon] {
+    if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+        
+        let fetchRequest = Pokemon.fetchRequest() as NSFetchRequest<Pokemon>
+        
+        if caught {
+            fetchRequest.predicate = NSPredicate(format: "hasBeenCaught == true")
+        } else {
+            fetchRequest.predicate = NSPredicate(format: "hasBeenCaught == false")
+        }
+        
+        if let storedPokemon = try? context.fetch(fetchRequest) {
+            return storedPokemon
+        }
+        
+    }
+    
+    return [] //if this returns, again, shit went sideways
+}

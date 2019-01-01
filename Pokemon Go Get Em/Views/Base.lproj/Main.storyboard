@@ -91,12 +91,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="ZhV-WY-CKt" secondAttribute="bottom" id="4J3-cw-OSl"/>
+                            <constraint firstItem="prj-SN-wPb" firstAttribute="bottom" secondItem="ZhV-WY-CKt" secondAttribute="bottom" constant="-34" id="4J3-cw-OSl"/>
                             <constraint firstItem="prj-SN-wPb" firstAttribute="bottom" secondItem="feb-9X-M5B" secondAttribute="bottom" constant="10" id="HsQ-Vb-KAn"/>
                             <constraint firstItem="prj-SN-wPb" firstAttribute="trailing" secondItem="ZhV-WY-CKt" secondAttribute="trailing" id="bMs-Pq-QBj"/>
                             <constraint firstItem="feb-9X-M5B" firstAttribute="centerX" secondItem="0EX-yw-31u" secondAttribute="centerX" id="gPX-h8-sTs"/>
                             <constraint firstItem="ZhV-WY-CKt" firstAttribute="leading" secondItem="prj-SN-wPb" secondAttribute="leading" id="vjJ-Jg-E17"/>
-                            <constraint firstItem="ZhV-WY-CKt" firstAttribute="top" secondItem="0EX-yw-31u" secondAttribute="top" id="ywz-0L-GxZ"/>
+                            <constraint firstItem="ZhV-WY-CKt" firstAttribute="top" secondItem="prj-SN-wPb" secondAttribute="top" constant="-44" id="ywz-0L-GxZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="prj-SN-wPb"/>
                     </view>

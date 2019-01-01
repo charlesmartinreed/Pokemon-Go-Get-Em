@@ -101,7 +101,7 @@
 		8CA3C6B421DAF85300AA8A09 /* charmander.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C65021DAF85300AA8A09 /* charmander.png */; };
 		8CA3C6B521DAF85300AA8A09 /* pokebag.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C65121DAF85300AA8A09 /* pokebag.png */; };
 		8CA3C6B621DAF85300AA8A09 /* battle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C65221DAF85300AA8A09 /* battle.png */; };
-		8CA3C6B721DAF85300AA8A09 /* bullbasaur.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C65321DAF85300AA8A09 /* bullbasaur.png */; };
+		8CA3C6B721DAF85300AA8A09 /* bulbasaur.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C65321DAF85300AA8A09 /* bulbasaur.png */; };
 		8CA3C6B821DAF85300AA8A09 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C65421DAF85300AA8A09 /* camera.png */; };
 		8CA3C6B921DAF85300AA8A09 /* gotcha.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C65521DAF85300AA8A09 /* gotcha.png */; };
 		8CA3C6BA21DAF85300AA8A09 /* lucky-eggs.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C65621DAF85300AA8A09 /* lucky-eggs.png */; };
@@ -217,7 +217,7 @@
 		8CA3C65021DAF85300AA8A09 /* charmander.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = charmander.png; sourceTree = "<group>"; };
 		8CA3C65121DAF85300AA8A09 /* pokebag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pokebag.png; sourceTree = "<group>"; };
 		8CA3C65221DAF85300AA8A09 /* battle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battle.png; sourceTree = "<group>"; };
-		8CA3C65321DAF85300AA8A09 /* bullbasaur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullbasaur.png; sourceTree = "<group>"; };
+		8CA3C65321DAF85300AA8A09 /* bulbasaur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bulbasaur.png; sourceTree = "<group>"; };
 		8CA3C65421DAF85300AA8A09 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
 		8CA3C65521DAF85300AA8A09 /* gotcha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gotcha.png; sourceTree = "<group>"; };
 		8CA3C65621DAF85300AA8A09 /* lucky-eggs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lucky-eggs.png"; sourceTree = "<group>"; };
@@ -404,7 +404,7 @@
 				8CA3C65021DAF85300AA8A09 /* charmander.png */,
 				8CA3C65121DAF85300AA8A09 /* pokebag.png */,
 				8CA3C65221DAF85300AA8A09 /* battle.png */,
-				8CA3C65321DAF85300AA8A09 /* bullbasaur.png */,
+				8CA3C65321DAF85300AA8A09 /* bulbasaur.png */,
 				8CA3C65421DAF85300AA8A09 /* camera.png */,
 				8CA3C65521DAF85300AA8A09 /* gotcha.png */,
 				8CA3C65621DAF85300AA8A09 /* lucky-eggs.png */,
@@ -542,7 +542,7 @@
 				8CA3C6C321DAF85300AA8A09 /* mew.png in Resources */,
 				8CA3C68B21DAF85300AA8A09 /* heart.png in Resources */,
 				8CA3C66721DAF85300AA8A09 /* dratini.png in Resources */,
-				8CA3C6B721DAF85300AA8A09 /* bullbasaur.png in Resources */,
+				8CA3C6B721DAF85300AA8A09 /* bulbasaur.png in Resources */,
 				8CA3C66D21DAF85300AA8A09 /* potion.png in Resources */,
 				8CA3C66C21DAF85300AA8A09 /* candy.png in Resources */,
 				8CA3C69921DAF85300AA8A09 /* razz-berry.png in Resources */,

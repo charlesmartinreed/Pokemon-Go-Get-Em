@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 
 class MapViewController: UIViewController {
-
+    
     //MARK:- @IBOutlets
     @IBOutlet weak var mapView: MKMapView!
     
@@ -38,14 +38,14 @@ class MapViewController: UIViewController {
         }
         
     }
-
+    
     //MARK:- Location methods
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         //first time authorization use case
         switch status {
         case .authorizedWhenInUse:
             setupPlayerLocation()
-            //TODO: Implement a display alert func that can handle these fail states
+        //TODO: Implement a display alert func that can handle these fail states
         case .denied:
             print("location update denied")
         case .restricted:
@@ -65,7 +65,7 @@ class MapViewController: UIViewController {
         //place the pokemon on the screen
         Timer.scheduledTimer(timeInterval: pokemonSpawnRate, target: self, selector: #selector(generateNewPokemonOnMap), userInfo: nil, repeats: true)
     }
-
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
         //now each time this function gets called, we should use the update count to make sure we're not constantly centering
@@ -94,13 +94,13 @@ class MapViewController: UIViewController {
                     //create the annotation and add it to the mapView
                     annoCoord.latitude += (Double.random(in: 0...200) - 100.0) / 10000.0
                     annoCoord.longitude += (Double.random(in: 0...200) - 100.0) / 10000.0
-
+                    
                     let anno = PokeAnnotation(coordinate: annoCoord, pokemon: randomPokemon)
                     mapView.addAnnotation(anno)
                 }
             }
             
-//            Timer.scheduledTimer(timeInterval: pokemonSpawnRate / 2.0, target: self, selector: #selector(removeOldPokemonFromMap), userInfo: nil, repeats: true)
+            //            Timer.scheduledTimer(timeInterval: pokemonSpawnRate / 2.0, target: self, selector: #selector(removeOldPokemonFromMap), userInfo: nil, repeats: true)
             removeOldPokemonFromMap()
         }
     }
@@ -113,7 +113,7 @@ class MapViewController: UIViewController {
                 allPokeAnnotations.append(annotation as! PokeAnnotation)
             }
         }
-
+        
         //remove a random annotation
         guard let annotationToRemove = allPokeAnnotations.randomElement() else { return }
         mapView.removeAnnotation(annotationToRemove)
@@ -144,7 +144,7 @@ class MapViewController: UIViewController {
         frame.size.height = 50.0
         frame.size.width = 50.0
         annoView.frame = frame
-
+        
         return annoView
     }
     
@@ -182,7 +182,7 @@ class MapViewController: UIViewController {
         }
         
     }
- 
+    
     
     func markPokemonAsCaptured(pokemon: Pokemon) {
         pokemon.hasBeenCaught = true
@@ -194,23 +194,23 @@ class MapViewController: UIViewController {
     func displayAlertForAttemptCapture(title: String, message: String, inRange: Bool) {
         let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
-        let pokeDexAction = UIAlertAction(title: "View Pokedex", style: .default) { (_) in
+        let goToDexAction = UIAlertAction(title: "View Pokedex", style: .default) { (_) in
             //move them to the Pokedex
             self.performSegue(withIdentifier: "moveToPokedex", sender: nil)
         }
-        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        let confirmAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         
         //MIGHT be a better idea to create two separate display alerts here, instead of shoehorning this functionaliy here. Consider this a proof of concept.
         if inRange {
-            ac.addAction(pokeDexAction)
-            ac.addAction(okAction)
+            ac.addAction(goToDexAction)
+            ac.addAction(confirmAction)
         } else {
-            ac.addAction(okAction)
+            ac.addAction(confirmAction)
         }
         
         present(ac, animated: true, completion: nil)
     }
-
+    
     
     //MARK:- @IBActions
     @IBAction func centerMapButtonTapped(_ sender: UIButton) {
@@ -222,10 +222,10 @@ class MapViewController: UIViewController {
         guard let center = manager.location?.coordinate else { return }
         let region = MKCoordinateRegion(center: center, latitudinalMeters: 200, longitudinalMeters: 200) //translates to roughly 110 yards
         mapView.setRegion(region, animated: animated)
-
+        
     }
     
-
+    
 }
 
 extension MapViewController: CLLocationManagerDelegate {
