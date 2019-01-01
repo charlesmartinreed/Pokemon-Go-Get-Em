@@ -39,13 +39,13 @@ func getAllPokemon() -> [Pokemon] {
         
         //attempt to fetch on the context
         if let pokemonData = try? context.fetch(Pokemon.fetchRequest()) as? [Pokemon] {
-            if let pokemon = pokemonData {
+            if let allPokemon = pokemonData {
                 //see if there's something in pokemon
-                if pokemon.isEmpty {
+                if allPokemon.isEmpty {
                     addAllPokemon()
                     return getAllPokemon()
                 } else {
-                    return pokemon //array
+                    return allPokemon //array
                 }
             }
         }

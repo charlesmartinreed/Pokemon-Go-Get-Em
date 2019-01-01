@@ -17,15 +17,15 @@ class MapViewController: UIViewController {
     //MARK:- Properties
     var manager = CLLocationManager()
     var updateCount = 0
-    var pokemonArray = [Pokemon]()
+    var allPokemon = [Pokemon]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        manager.delegate = self
         
         //grab your Pokemon from CoreData
-        pokemonArray = getAllPokemon()
+        allPokemon = getAllPokemon()
         
+        manager.delegate = self
         //check whether or not the user has authorized location gathering
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
             setupPlayerLocation()
@@ -35,45 +35,14 @@ class MapViewController: UIViewController {
         
     }
 
-    //MARK:- Location
-    private func setupPlayerLocation() {
-        
-        mapView.showsUserLocation = true
-        manager.startUpdatingLocation()
-        mapView.delegate = self
-        
-        //here, we'll start creating new Pokemon after some interval, at a random location
-//        Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true) { (_) in
-//            //place the pokemon on the screen
-//        }
-        Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(generateNewPokemonOnMap), userInfo: nil, repeats: true)
-    }
-    
-    @objc private func generateNewPokemonOnMap() {
-        //get the user's starting location
-        if let center = manager.location?.coordinate {
-            
-            //generate a random location for the pokemon
-            var annoCoord = center
-            annoCoord.latitude += (Double.random(in: 0...200) - 100.0) / 5000.0
-            annoCoord.longitude += (Double.random(in: 0...200) - 100.0) / 5000.0
-            
-            //grab a random pokemon from the array
-            if let randomPokemon = pokemonArray.randomElement() {
-                //create the annotation and add it to the mapView
-                let anno = PokeAnnotation(coordinate: annoCoord, pokemon: randomPokemon)
-                mapView.addAnnotation(anno)
-            }
-        }
-    }
-    
+    //MARK:- Location methods
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         //first time authorization use case
         switch status {
         case .authorizedWhenInUse:
             setupPlayerLocation()
-        case .denied:
             //TODO: Implement a display alert func that can handle these fail states
+        case .denied:
             print("location update denied")
         case .restricted:
             print("location updating is restricted on device")
@@ -81,6 +50,51 @@ class MapViewController: UIViewController {
             break
         }
     }
+    
+    private func setupPlayerLocation() {
+        
+        mapView.showsUserLocation = true
+        manager.startUpdatingLocation()
+        mapView.delegate = self
+        
+        //here, we'll start creating new Pokemon after some interval, at a random location
+        //place the pokemon on the screen
+        Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(generateNewPokemonOnMap), userInfo: nil, repeats: true)
+    }
+
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        //now each time this function gets called, we should use the update count to make sure we're not constantly centering
+        if updateCount < 3 {
+            if let center = manager.location?.coordinate {
+                let region = MKCoordinateRegion(center: center, latitudinalMeters: 200, longitudinalMeters: 200)
+                mapView.setRegion(region, animated: false)
+            }
+            updateCount += 1
+        } else {
+            manager.stopUpdatingLocation()
+        }
+    }
+    
+    //MARK:- Pokemon generation method
+    @objc private func generateNewPokemonOnMap() {
+        //get the user's starting location
+        if let center = manager.location?.coordinate {
+            
+            //generate a random location for the pokemon
+            var annoCoord = center
+            annoCoord.latitude += (Double.random(in: 0...200) - 100.0) / 50000.0
+            annoCoord.longitude += (Double.random(in: 0...200) - 100.0) / 50000.0
+            
+            //grab a random pokemon from the array
+            if let randomPokemon = allPokemon.randomElement() {
+                //create the annotation and add it to the mapView
+                let anno = PokeAnnotation(coordinate: annoCoord, pokemon: randomPokemon)
+                mapView.addAnnotation(anno)
+            }
+        }
+    }
+    
     
     //MARK:- Custom annotation view method
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
@@ -92,35 +106,87 @@ class MapViewController: UIViewController {
             //find the player image in the bundle and use it as our annotation pin
             guard let playerImage = Bundle.main.path(forResource: "player", ofType: "png") else { return nil }
             annoView.image = UIImage(contentsOfFile: playerImage)
+            print(playerImage)
         } else {
             //if the annotation is representing the Pokemon
             if let pokeAnnotation = annotation as? PokeAnnotation {
-                if let imageName = pokeAnnotation.pokemon.imageName {
-                    annoView.image = UIImage(contentsOfFile: imageName)
-                }
+                guard let pokeImage = Bundle.main.path(forResource: pokeAnnotation.pokemon.name, ofType: "png") else { return nil }
+                annoView.image = UIImage(contentsOfFile: pokeImage)
             }
         }
         
         //set the frame size for our custom annotation
         var frame = annoView.frame
-        frame.size.height = 50
-        frame.size.width = 50
+        frame.size.height = 50.0
+        frame.size.width = 50.0
         annoView.frame = frame
 
         return annoView
     }
     
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    //MARK:- Pokemon capture methods
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        mapView.deselectAnnotation(view.annotation, animated: true)
         
-        //now each time this function gets called, we should use the update count to make sure we're not constantly centering
-        if updateCount < 3 {
-            centerMapViewOnUser(animated: false)
-            updateCount += 1
+        //when the TRAINER is checked
+        if view.annotation is MKUserLocation {
+            
         } else {
-            manager.stopUpdatingLocation()
+            //when the POKEMON is tapped - can it be caught?
+            //1. center map on the user
+            if let center = manager.location?.coordinate {
+                if let pokeLocationCenter = view.annotation?.coordinate {
+                    //create a region that zooms in on the Pokemon
+                    let region = MKCoordinateRegion(center: pokeLocationCenter, latitudinalMeters: 200, longitudinalMeters: 200)
+                    mapView.setRegion(region, animated: false)
+                    
+                    if let pokeAnnotion = view.annotation as? PokeAnnotation {
+                        //is the pokemon in range
+                        if mapView.visibleMapRect.contains(MKMapPoint(center)) {
+                            //successful CAPTURE
+                            markPokemonAsCaptured(pokemon: pokeAnnotion.pokemon)
+                            guard let name = pokeAnnotion.pokemon.name else { return }
+                            displayAlertForAttemptCapture(title: "You caught a \(name.capitalized)!", message: "\(name.capitalized) has been added to your Pokedex.", inRange: true)
+                        } else {
+                            //failed to CAPTURE
+                            guard let name = pokeAnnotion.pokemon.name else { return }
+                            displayAlertForAttemptCapture(title: "You're too far away!", message: "You need to be a bit closer to \(name.capitalized) in order to attempt capturing it.", inRange: false)
+                        }
+                    }
+                }
+            }
+           
         }
         
+    }
+ 
+    
+    func markPokemonAsCaptured(pokemon: Pokemon) {
+        pokemon.hasBeenCaught = true
         
+        //update Core Data
+        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+    }
+    
+    func displayAlertForAttemptCapture(title: String, message: String, inRange: Bool) {
+        let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        let pokeDexAction = UIAlertAction(title: "View Pokedex", style: .default) { (_) in
+            //move them to the Pokedex
+            self.performSegue(withIdentifier: "moveToPokedex", sender: nil)
+        }
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        
+        //MIGHT be a better idea to create two separate display alerts here, instead of shoehorning this functionaliy here. Consider this a proof of concept.
+        if inRange {
+            ac.addAction(pokeDexAction)
+            ac.addAction(okAction)
+        } else {
+            ac.addAction(okAction)
+        }
+        
+        present(ac, animated: true, completion: nil)
     }
 
     
@@ -132,7 +198,7 @@ class MapViewController: UIViewController {
     private func centerMapViewOnUser(animated: Bool) {
         //get the user location from the manager
         guard let center = manager.location?.coordinate else { return }
-        let region = MKCoordinateRegion(center: center, latitudinalMeters: 100, longitudinalMeters: 100) //translates to roughly 110 yards
+        let region = MKCoordinateRegion(center: center, latitudinalMeters: 200, longitudinalMeters: 200) //translates to roughly 110 yards
         mapView.setRegion(region, animated: animated)
 
     }

@@ -11,7 +11,6 @@
 		8CA3C2BC21DAE9FC00AA8A09 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA3C2BB21DAE9FC00AA8A09 /* MapViewController.swift */; };
 		8CA3C2BF21DAE9FC00AA8A09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C2BD21DAE9FC00AA8A09 /* Main.storyboard */; };
 		8CA3C2C221DAE9FC00AA8A09 /* Pokemon_Go_Get_Em.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8CA3C2C021DAE9FC00AA8A09 /* Pokemon_Go_Get_Em.xcdatamodeld */; };
-		8CA3C2C421DAE9FF00AA8A09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C2C321DAE9FF00AA8A09 /* Assets.xcassets */; };
 		8CA3C2C721DAE9FF00AA8A09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C2C521DAE9FF00AA8A09 /* LaunchScreen.storyboard */; };
 		8CA3C2D121DAEC5A00AA8A09 /* PokedexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA3C2D021DAEC5A00AA8A09 /* PokedexViewController.swift */; };
 		8CA3C4CE21DAF09C00AA8A09 /* license.html in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C33A21DAF09B00AA8A09 /* license.html */; };
@@ -117,6 +116,7 @@
 		8CA3C6C321DAF85300AA8A09 /* mew.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C65F21DAF85300AA8A09 /* mew.png */; };
 		8CA3C6C621DAFE9A00AA8A09 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA3C6C521DAFE9A00AA8A09 /* CoreDataHelper.swift */; };
 		8CA3C6C921DB042200AA8A09 /* PokeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA3C6C821DB042200AA8A09 /* PokeAnnotation.swift */; };
+		8CA3C6CB21DB4AF200AA8A09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C6CA21DB4AF200AA8A09 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -125,7 +125,6 @@
 		8CA3C2BB21DAE9FC00AA8A09 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8CA3C2BE21DAE9FC00AA8A09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CA3C2C121DAE9FC00AA8A09 /* Pokemon_Go_Get_Em.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pokemon_Go_Get_Em.xcdatamodel; sourceTree = "<group>"; };
-		8CA3C2C321DAE9FF00AA8A09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CA3C2C621DAE9FF00AA8A09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CA3C2C821DAE9FF00AA8A09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CA3C2D021DAEC5A00AA8A09 /* PokedexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexViewController.swift; sourceTree = "<group>"; };
@@ -233,6 +232,7 @@
 		8CA3C65F21DAF85300AA8A09 /* mew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mew.png; sourceTree = "<group>"; };
 		8CA3C6C521DAFE9A00AA8A09 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		8CA3C6C821DB042200AA8A09 /* PokeAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeAnnotation.swift; sourceTree = "<group>"; };
+		8CA3C6CA21DB4AF200AA8A09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,8 +269,8 @@
 				8CA3C6C421DAFE1500AA8A09 /* Models */,
 				8CA3C2CF21DAEA2200AA8A09 /* Views */,
 				8CA3C2CE21DAEA1100AA8A09 /* Controllers */,
-				8CA3C2C321DAE9FF00AA8A09 /* Assets.xcassets */,
 				8CA3C6C721DAFEB400AA8A09 /* Helpers */,
+				8CA3C6CA21DB4AF200AA8A09 /* Assets.xcassets */,
 				8CA3C2D321DAF09B00AA8A09 /* Images */,
 				8CA3C2C521DAE9FF00AA8A09 /* LaunchScreen.storyboard */,
 				8CA3C2C821DAE9FF00AA8A09 /* Info.plist */,
@@ -501,6 +501,7 @@
 				8CA3C69B21DAF85300AA8A09 /* psyduck.png in Resources */,
 				8CA3C69121DAF85300AA8A09 /* pokeball.png in Resources */,
 				8CA3C6B821DAF85300AA8A09 /* camera.png in Resources */,
+				8CA3C6CB21DB4AF200AA8A09 /* Assets.xcassets in Resources */,
 				8CA3C66621DAF85300AA8A09 /* pokecoins.png in Resources */,
 				8CA3C69321DAF85300AA8A09 /* pikachu-1.png in Resources */,
 				8CA3C69221DAF85300AA8A09 /* money-bag.png in Resources */,
@@ -560,7 +561,6 @@
 				8CA3C68C21DAF85300AA8A09 /* valor-1.png in Resources */,
 				8CA3C69821DAF85300AA8A09 /* open-pokeball.png in Resources */,
 				8CA3C6BD21DAF85300AA8A09 /* egg-1.png in Resources */,
-				8CA3C2C421DAE9FF00AA8A09 /* Assets.xcassets in Resources */,
 				8CA3C66421DAF85300AA8A09 /* mega-ball.png in Resources */,
 				8CA3C6BB21DAF85300AA8A09 /* up-arrow.png in Resources */,
 				8CA3C68221DAF85300AA8A09 /* tornado-1.png in Resources */,

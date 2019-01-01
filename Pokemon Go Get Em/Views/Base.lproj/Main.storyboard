@@ -40,7 +40,7 @@
                                 </constraints>
                                 <state key="normal" image="pokeball.png"/>
                                 <connections>
-                                    <segue destination="Whs-0E-yGu" kind="presentation" id="QMX-ve-0YD"/>
+                                    <segue destination="Whs-0E-yGu" kind="presentation" identifier="moveToPokedex" id="QMX-ve-0YD"/>
                                 </connections>
                             </button>
                         </subviews>
