@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C7D8A5B21DED40900FB104B /* PokemonCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D8A5A21DED40900FB104B /* PokemonCaptureViewController.swift */; };
 		8CA3C2BA21DAE9FC00AA8A09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA3C2B921DAE9FC00AA8A09 /* AppDelegate.swift */; };
 		8CA3C2BC21DAE9FC00AA8A09 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA3C2BB21DAE9FC00AA8A09 /* MapViewController.swift */; };
 		8CA3C2BF21DAE9FC00AA8A09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C2BD21DAE9FC00AA8A09 /* Main.storyboard */; };
@@ -120,6 +121,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C7D8A5A21DED40900FB104B /* PokemonCaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCaptureViewController.swift; sourceTree = "<group>"; };
 		8CA3C2B621DAE9FC00AA8A09 /* Pokemon Go Get Em.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pokemon Go Get Em.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CA3C2B921DAE9FC00AA8A09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CA3C2BB21DAE9FC00AA8A09 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 			children = (
 				8CA3C2BB21DAE9FC00AA8A09 /* MapViewController.swift */,
 				8CA3C2D021DAEC5A00AA8A09 /* PokedexViewController.swift */,
+				8C7D8A5A21DED40900FB104B /* PokemonCaptureViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -611,6 +614,7 @@
 			files = (
 				8CA3C6C621DAFE9A00AA8A09 /* CoreDataHelper.swift in Sources */,
 				8CA3C6C921DB042200AA8A09 /* PokeAnnotation.swift in Sources */,
+				8C7D8A5B21DED40900FB104B /* PokemonCaptureViewController.swift in Sources */,
 				8CA3C2BC21DAE9FC00AA8A09 /* MapViewController.swift in Sources */,
 				8CA3C2D121DAEC5A00AA8A09 /* PokedexViewController.swift in Sources */,
 				8CA3C2BA21DAE9FC00AA8A09 /* AppDelegate.swift in Sources */,

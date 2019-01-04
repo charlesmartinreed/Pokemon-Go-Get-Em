@@ -66,6 +66,7 @@ extension PokedexViewController: UITableViewDataSource, UITableViewDelegate {
             pokemon = caughtPokemon[indexPath.row]
         } else {
             pokemon = uncaughtPokemon[indexPath.row]
+            cell.imageView?.alpha = 0.3
         }
         
         cell.textLabel?.text = pokemon.name

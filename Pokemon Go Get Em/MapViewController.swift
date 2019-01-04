@@ -18,7 +18,7 @@ class MapViewController: UIViewController {
     var manager = CLLocationManager()
     var updateCount = 0
     var allPokemon = [Pokemon]()
-    var pokemonSpawnRate: Double = 5
+    var pokemonSpawnRate: Double = 2.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -92,8 +92,8 @@ class MapViewController: UIViewController {
                     //generate a random location for the pokemon
                     var annoCoord = center
                     //create the annotation and add it to the mapView
-                    annoCoord.latitude += (Double.random(in: 0...200) - 100.0) / 10000.0
-                    annoCoord.longitude += (Double.random(in: 0...200) - 100.0) / 10000.0
+                    annoCoord.latitude += (Double.random(in: 0...200) - 100.0) / 5000.0
+                    annoCoord.longitude += (Double.random(in: 0...200) - 100.0) / 5000.0
                     
                     let anno = PokeAnnotation(coordinate: annoCoord, pokemon: randomPokemon)
                     mapView.addAnnotation(anno)
@@ -169,9 +169,12 @@ class MapViewController: UIViewController {
                         guard let name = pokeAnnotion.pokemon.name else { return }
                         //is the pokemon in range
                         if mapView.visibleMapRect.contains(MKMapPoint(center)) {
-                            //successful CAPTURE
-                            markPokemonAsCaptured(pokemon: pokeAnnotion.pokemon)
-                            displayAlertForAttemptCapture(title: "You caught a \(name.capitalized)!", message: "\(name.capitalized) has been added to your Pokedex.", inRange: true)
+                            performSegue(withIdentifier: "segueToPokemonCaptureVC", sender: pokeAnnotion.pokemon)
+                            //if successful CAPTURE
+                            //TODO: Send to the capture view, return from capture with a bool, use that bool to determine whether or not to mark as captured. Either way, remove that pokemon from the map.
+                            //markPokemonAsCaptured(pokemon: pokeAnnotion.pokemon)
+                            //displayAlertForAttemptCapture(title: "You caught a \(name.capitalized)!", message: "\(name.capitalized) has been added to your Pokedex.", inRange: true)
+                            //mapView.removeAnnotation(pokeAnnotion) //once captured
                         } else {
                             //failed to CAPTURE
                             displayAlertForAttemptCapture(title: "You're too far away!", message: "You need to be a bit closer to \(name.capitalized) in order to attempt capturing it.", inRange: false)
@@ -181,6 +184,17 @@ class MapViewController: UIViewController {
             }
         }
         
+    }
+    
+    //MARK:- Segue method for capturing Pokemon
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueToPokemonCaptureVC" {
+            if let destinationVC = segue.destination as? PokemonCaptureViewController {
+                if let pokemon = sender as? Pokemon {
+                    destinationVC.pokemon = pokemon
+                }
+            }
+        }
     }
     
     

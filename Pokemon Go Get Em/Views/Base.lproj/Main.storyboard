@@ -59,6 +59,7 @@
                     </view>
                     <connections>
                         <outlet property="mapView" destination="ctH-Kb-DMA" id="ZmI-Hu-EtG"/>
+                        <segue destination="0C4-ER-Svi" kind="show" identifier="segueToPokemonCaptureVC" id="aZg-aJ-z5O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -108,10 +109,45 @@
             </objects>
             <point key="canvasLocation" x="402" y="-296"/>
         </scene>
+        <!--Pokemon Capture View Controller-->
+        <scene sceneID="ZeC-6a-vmE">
+            <objects>
+                <viewController id="0C4-ER-Svi" customClass="PokemonCaptureViewController" customModule="Pokemon_Go_Get_Em" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eHR-Uu-oUR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="toh-nD-8fY">
+                                <rect key="frame" x="143" y="96" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="7Dz-ev-SnY"/>
+                                    <constraint firstAttribute="width" constant="128" id="dsI-sY-Xwo"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="pokeball" translatesAutoresizingMaskIntoConstraints="NO" id="veE-Qw-oiP">
+                                <rect key="frame" x="191" y="768" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="Zdb-jj-rpd"/>
+                                    <constraint firstAttribute="height" constant="32" id="d8F-4O-FeG"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="QOR-3q-OLc"/>
+                    </view>
+                    <connections>
+                        <outlet property="pokemonImageView" destination="toh-nD-8fY" id="V5s-kQ-QP4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tE0-kc-K0W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="400.00000000000006" y="435.9375"/>
+        </scene>
     </scenes>
     <resources>
         <image name="compass.png" width="512" height="512"/>
         <image name="map.png" width="512" height="512"/>
+        <image name="pokeball" width="101" height="101"/>
         <image name="pokeball.png" width="512" height="512"/>
     </resources>
 </document>
